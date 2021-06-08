@@ -1,0 +1,53 @@
+.nav-link 
+    font-family: 'Inter', sans-serif
+    font-size: 12px
+    letter-spacing: 2px
+    text-transform: uppercase
+    color: var(--linck-color)
+    transition: .6s all
+    position: relative
+    &:hover
+        color: var(--orang-color)
+        transition: .6s
+        opacity: 1
+    &:hover::before
+        width: 80%
+.nav-link::before
+    content: ""
+    position: absolute
+    bottom: -5px
+    left: 0
+    height: 2px
+    width: 0
+    background: var(--orang-color)
+    border-radius: 5px
+    transition: .6s linear
+
+.btnHeader
+    padding: 10px 30px
+    border: 1px solid var(--orang-color)
+    color:  var(--orang-color)
+    font-size: 12px
+    font-family: 'Rubik', sans-serif
+    font-style: normal
+    font-weight: 500
+    text-transform: uppercase
+    box-sizing: border-box
+    border-radius: 4px
+    transition: .6s all
+    &:hover
+        color: var(--white-color)
+        background: var(--orang-color)
+        transition: .6s
+        box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13)
+.navbar-toggler
+    background: var(--orang-color)
+.navbar-collapse
+    text-align: center
+.navbar-toggler-icon
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+
+@media screen and ( max-width: 992px)
+    .content
+        display: inline
+    
